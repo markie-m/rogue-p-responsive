@@ -59,7 +59,7 @@ header {
 
 header h1 {
 	margin: 0;
-	padding: 38px 0;
+	/* padding: 38px 0; */
 	border-bottom: 3px solid #77a466;
 	width: 100%;
 	display: flex;
@@ -72,7 +72,6 @@ header h1 span {
 header nav {
 	/* padding: 46px 0; */
 	padding: 24px 0;
-	/* border-top: 3px solid #77a466; */
 }
 header nav ul {
 	margin: 0;
@@ -219,6 +218,25 @@ footer span {
 
 /***** DESKTOP STYLES *****/
 @media all and (min-width:1200px) {
+	header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	header h1 {
+		width: 50%;
+		/* padding: 38px 0; */
+		border-bottom: 0;
+		text-align: left;
+		justify-content: flex-start;
+	}
+	header nav {
+		width: 40%;
+	}
+	header nav ul {
+		display: flex;
+		flex-flow: row;
+	}
 	header nav ul li {
 		padding: 0 10px;
 	}
