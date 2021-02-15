@@ -41,7 +41,7 @@ h3 {
 
 p {
 	font-size: 0.875em;
-	/* line-height: 21px; */
+	line-height: 1.313em;
     /* padding: 0 30px; */
 }
 
@@ -60,6 +60,10 @@ header {
 header h1 {
 	margin: 0;
 	padding: 38px 0;
+	border-bottom: 3px solid #77a466;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 header h1 span {
 	color: #77a466;
@@ -68,6 +72,7 @@ header h1 span {
 header nav {
 	/* padding: 46px 0; */
 	padding: 24px 0;
+	/* border-top: 3px solid #77a466; */
 }
 header nav ul {
 	margin: 0;
@@ -121,7 +126,7 @@ header nav ul li a{
 .main-title p {
 	padding: 0;
 	font-size: 1em;
-	/* line-height: 25px; */
+	line-height: 1.563em;
 }
 
 .section-one,
