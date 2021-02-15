@@ -42,7 +42,7 @@ h3 {
 p {
 	font-size: 0.875em;
 	/* line-height: 21px; */
-    padding: 0 30px;
+    /* padding: 0 30px; */
 }
 
 /*The widths are in a percentage!*/
@@ -53,7 +53,8 @@ header {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	flex-flow: row wrap;
+	/* flex-flow: row wrap; */
+	flex-direction: column;
 }
 
 header h1 {
@@ -65,7 +66,8 @@ header h1 span {
 }
 
 header nav {
-	padding: 46px 0;
+	/* padding: 46px 0; */
+	padding: 24px 0;
 }
 header nav ul {
 	margin: 0;
@@ -75,8 +77,11 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 0.875em;
-	padding: 0 10px;
-	display: inline;
+	padding: 10px;
+	list-style-type: none;
+	/* display: inline; */
+	display: flex;
+	justify-content: center;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -92,6 +97,9 @@ header nav ul li a{
 	align-items: center;
 	width: 100%;
 	flex-flow: row wrap;
+}
+.bottom-section {
+	flex-flow: column;
 }
 
 .main-image {
@@ -119,7 +127,8 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	/* width: 33%; */
+	width: 100%;
 	height: auto;
 	border-top: 1px solid #eee;
 }
@@ -129,13 +138,13 @@ header nav ul li a{
 }
 
 .section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+	/* border-left: 1px solid #eee;
+	border-right: 1px solid #eee; */
 }
 
 .section-two h3,
 .section-three h3 {
-	padding: 10px 30px;
+	/* padding: 10px 30px; */
 }
 
 .menu {
@@ -175,4 +184,37 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+/***** TABLET STYLES *****/
+@media all and (min-width:768px) {
+	.bottom-section {
+		/* justify-content: baseline; */
+		flex-flow: row wrap;
+		align-items: flex-start;
+	}
+	.section-one {
+		width: 33%;
+	}
+	.section-two {
+		width: 33%;
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+	.section-three {
+		width: 33%;
+	}
+	.section-two h3,
+	.section-two p,
+	.section-three h3,
+	.section-three p {
+		padding: 10px 30px;
+	}
+}
+
+/***** DESKTOP STYLES *****/
+@media all and (min-width:1200px) {
+	header nav ul li {
+		padding: 0 10px;
+	}
 }
