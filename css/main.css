@@ -60,7 +60,6 @@ header {
 header h1 {
 	margin: 0;
 	padding: 38px 20px 20px 20px;
-	/* IDK about this last 20px padding. It forces an unnecessary indent on the left side. */
 	border-bottom: 3px solid #77a466;
 	width: 100%;
 }
@@ -110,7 +109,7 @@ header nav ul li a {
 .main-title p {
 	padding: 0;
 	font-size: 1em;
-	line-height: 1.563em;
+	line-height: 1.563;
 }
 
 .section-one,
@@ -118,20 +117,6 @@ header nav ul li a {
 .section-three {
 	width: 100%;
 	border-top: 1px solid #eee;
-}
-
-.section-one h3 {
-	padding: 10px 0;
-}
-
-.section-two {
-	/* border-left: 1px solid #eee;
-	border-right: 1px solid #eee; */
-}
-
-.section-two h3,
-.section-three h3 {
-	/* padding: 10px 30px; */
 }
 
 .menu {
