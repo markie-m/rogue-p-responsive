@@ -10,7 +10,7 @@ body {
 	font-size: 1em;
 }
 
-.container{
+.container {
 	max-width: 1200px;
 	width: 90%;
 	display: flex;
@@ -46,6 +46,10 @@ ul {
 	margin: 0;
 }
 
+figure {
+	margin: 0;
+}
+
 /*The widths are in a percentage!*/
 header {
 	border-bottom: 3px solid #77a466;
@@ -65,6 +69,10 @@ header h1 {
 }
 header h1 span {
 	color: #77a466;
+}
+
+header .logo {
+	text-decoration: none;
 }
 
 header nav {
@@ -162,7 +170,48 @@ footer span {
 	font-size: 0.875em;
 }
 
-/***** TABLET STYLES *****/
+
+/*************** MENU PAGE STYLES ***************/
+.weekly-menu .container {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.weekly-menu h2 {
+	text-align: center;
+}
+.item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+.item figure {
+	width: 20%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.item h3 {
+	width: 100%;
+}
+.item img {
+	border: 1px solid #ddd; /* Gray border */
+	border-radius: 4px;  /* Rounded border */
+	padding: 5px; /* Some padding */
+	width: 100px; /* Set a small width */
+  }
+.item p {
+	width: 70%;
+}
+
+
+/*************** RESPONSIVE STYLES & BREAKPOINTS START HERE ***************/
+
+/*************** TABLET STYLES ***************/
 @media all and (min-width:768px) {
 	.bottom-section {
 		justify-content: space-between;
@@ -182,13 +231,13 @@ footer span {
 	}
 }
 
-/***** DESKTOP STYLES *****/
+/*************** DESKTOP STYLES ***************/
 @media all and (min-width:1200px) {
 	header {
 		justify-content: space-between;
 	}
 	header h1 {
-		width: 30%;
+		/* width: 30%; */
 		padding: 0;
 		border-bottom: none;
 		text-align: left;
