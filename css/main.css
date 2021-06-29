@@ -10,9 +10,17 @@ body {
 	font-size: 1em;
 }
 
-.container {
+.wrapper {
 	max-width: 1200px;
 	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+.container {
+	/* max-width: 1200px;
+	width: 90%; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
