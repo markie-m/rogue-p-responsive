@@ -53,7 +53,7 @@ figure {
 /*The widths are in a percentage!*/
 header {
 	border-bottom: 3px solid #77a466;
-	text-align: center;
+	/* text-align: center; */
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -65,7 +65,7 @@ header h1 {
 	margin: 0;
 	padding: 38px 20px 20px 20px;
 	border-bottom: 3px solid #77a466;
-	width: 100%;
+	/* width: 100%; */
 }
 header h1 span {
 	color: #77a466;
@@ -78,6 +78,7 @@ header .logo {
 header nav {
 	padding: 20px 0;
 	width: 100%;
+	text-align: center;
 }
 header nav ul {
 	margin: 0;
@@ -181,6 +182,10 @@ footer span {
 }
 .weekly-menu h2 {
 	text-align: center;
+	font-size: 1.5em;
+}
+.weekly-menu p {
+	font-size: 1em;
 }
 .item {
 	display: flex;
@@ -197,6 +202,7 @@ footer span {
 }
 .item h3 {
 	width: 100%;
+	font-size: 1.125em;
 }
 .item img {
 	border: 1px solid #ddd; /* Gray border */
@@ -206,6 +212,7 @@ footer span {
   }
 .item p {
 	width: 70%;
+	color:#77a466;
 }
 
 
@@ -243,7 +250,7 @@ footer span {
 		text-align: left;
 	}
 	header nav {
-		width: 40%;
+		width: 45%;
 	}
 	header nav ul {
 		display: flex;
