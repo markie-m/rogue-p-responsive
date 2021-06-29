@@ -95,6 +95,13 @@ header nav ul li a {
 	text-decoration: none;
 	color:#77a466;
 }
+header nav ul li a:hover,
+header nav ul li a:focus {
+	/* color:#333; */
+	text-decoration: underline;
+	text-decoration-thickness: .2em;
+	text-underline-offset: 0.1em;
+}
 .active {
 	color:#333;
 	text-decoration: underline;
@@ -173,6 +180,41 @@ footer span {
 
 
 /*************** MENU PAGE STYLES ***************/
+h2 {
+	font-size: 1.5em;
+	text-align: center;
+}
+nav.menu-nav {
+	/* padding: 20px 0; */
+	width: 100%;
+	text-align: center;
+}
+nav.menu-nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav.menu-nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.875em;
+	padding: 10px 0;
+	list-style: none;
+}
+nav.menu-nav ul li a {
+	text-decoration: none;
+	color:#77a466;
+}
+nav.menu-nav ul li a:hover,
+nav.menu-nav ul li a:focus {
+	/* color:#333; */
+	text-decoration: underline;
+	text-decoration-thickness: .2em;
+	text-underline-offset: 0.1em;
+}
+
 .weekly-menu .container {
 	width: 100%;
 	display: flex;
@@ -181,8 +223,13 @@ footer span {
 	align-items: center;
 }
 .weekly-menu h2 {
-	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.25em;
+	padding: 20px;
+	/* border-bottom: 3px solid #77a466; */
+	text-decoration: underline;
+	text-decoration-thickness: 3px;
+	text-underline-offset: 0.5em;
+	text-decoration-color: #77a466;
 }
 .weekly-menu p {
 	font-size: 1em;
@@ -192,6 +239,9 @@ footer span {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+}
+.item:last-child {
+	margin: 0 0 12px;
 }
 .item figure {
 	width: 20%;
