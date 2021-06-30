@@ -300,6 +300,14 @@ nav.menu-nav ul li a:focus {
 		border-right: 1px solid #eee;
 		padding: 0 20px;
 	}
+
+	/*************** TABLET MENU PAGE STYLES ***************/
+	.item {
+		justify-content: space-around;
+	}
+	.item img {
+		width: 150px; /* Set a small width */
+	}
 }
 
 /*************** DESKTOP STYLES ***************/
@@ -319,5 +327,15 @@ nav.menu-nav ul li a:focus {
 	header nav ul {
 		display: flex;
 		justify-content: space-between;
+	}
+	/*************** TABLET MENU PAGE STYLES ***************/
+	.item {
+		justify-content: center;
+	}
+	.item img {
+		width: 200px; /* Set a small width */
+	}
+	.item p {
+		margin-left: 3%;
 	}
 }
