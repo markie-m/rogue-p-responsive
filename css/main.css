@@ -6,7 +6,8 @@ html {
 /* VARIABLES/COLOR PALETTE STYLES */
 :root {
     --main-color: #4E8237;
-    --secondary-color: #3F7159;
+    --secondary-color: #000000;
+	--accent-color: #eeeeee;
 }
 
 /* BASE STYLES */
@@ -205,6 +206,30 @@ i {
 	text-align: center;
 	color: #77a466;
 }
+ul#lure.menu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: row wrap;
+}
+li.lure-item {
+	margin: 5px;
+}
+.menu a {
+	text-decoration: none;
+	background-color: #eee;
+	color: #77a466;
+	border: 2px solid #77a466;
+	font-weight: 700;
+	padding: 5px 10px;
+	border-radius: 25px;
+}
+.menu a:hover,
+.menu a:focus {
+	/* color:#333; */
+	background-color: #77a466;
+	color:#eee;
+}
 
 /*************** MENU PAGE STYLES ***************/
 h2 {
@@ -347,7 +372,17 @@ nav.menu-nav ul li a:focus {
 		display: flex;
 		justify-content: space-between;
 	}
-	/*************** TABLET MENU PAGE STYLES ***************/
+
+	/*************** desktop ABOUT PAGE STYLES ***************/
+	#about-sec1,
+	#about-sec3 {
+		flex-basis: 25%;
+	}
+	#about-sec2 {
+		flex-basis: 40%;
+	}
+
+	/*************** desktop MENU PAGE STYLES ***************/
 	.item {
 		justify-content: center;
 	}
@@ -357,4 +392,5 @@ nav.menu-nav ul li a:focus {
 	.item p {
 		margin-left: 3%;
 	}
+
 }
