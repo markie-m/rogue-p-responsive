@@ -51,11 +51,12 @@ h2 {
 	font-size: 1.125em;
 }
 h3 {
-	font-size: 0.75em;
+	/* font-size: 0.75em; */
+	font-size: 1em;
 }
 
 p {
-	font-size: 0.875em;
+	font-size: 1em;
 	line-height: 21px;
 }
 
@@ -104,7 +105,7 @@ header nav ul {
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 0.875em;
+	font-size: 1em;
 	padding: 10px 0;
 	list-style: none;
 }
@@ -231,7 +232,7 @@ li.lure-item {
 	color:#eee;
 }
 
-/*************** MENU PAGE STYLES ***************/
+/*************** MENUS PAGE STYLES ***************/
 h2 {
 	font-size: 1.5em;
 	text-align: center;
@@ -251,7 +252,7 @@ nav.menu-nav ul {
 nav.menu-nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 0.875em;
+	font-size: 1em;
 	padding: 10px 0;
 	list-style: none;
 }
@@ -366,7 +367,7 @@ nav.menu-nav ul li a:focus {
 		text-align: left;
 	}
 	header nav {
-		width: 45%;
+		width: 50%;
 	}
 	header nav ul {
 		display: flex;
