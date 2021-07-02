@@ -386,6 +386,16 @@ nav.menu-nav ul li a:focus {
 
 /*************** GALLERY PAGE STYLES ***************/
 /* Position the image container (needed to position the left and right arrows) */
+.gallery.main-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+.gallery.main-title h2,
+.gallery.main-title p {
+	text-align: center;
+}
 .gallery.bottom-section {
 	justify-content: center;
 	border-top: none;
