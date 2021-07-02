@@ -386,8 +386,13 @@ nav.menu-nav ul li a:focus {
 
 /*************** GALLERY PAGE STYLES ***************/
 /* Position the image container (needed to position the left and right arrows) */
+.gallery.bottom-section {
+	justify-content: center;
+	border-top: none;
+}
 .gallery.container {
 	position: relative;
+	width: 80%;
 }
   
 /* Hide the images by default */
@@ -416,7 +421,10 @@ nav.menu-nav ul li a:focus {
 	user-select: none;
 	-webkit-user-select: none;
 }
-  
+
+.prev {
+	left:0;
+}
 /* Position the "next button" to the right */
 .next {
 	right: 0;
@@ -441,9 +449,10 @@ nav.menu-nav ul li a:focus {
 /* Container for image text */
 .caption-container {
 	text-align: center;
-	background-color: #222;
+	background-color: var(--main-color, darkolivegreen);
 	padding: 2px 16px;
 	color: white;
+	width: 100%;
 }
   
 .row:after {
