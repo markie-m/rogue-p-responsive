@@ -9,6 +9,7 @@ html {
     --secondary-color: #000000;
 	--accent-color: #eeeeee;
 }
+/* Making use of variables for colors makes it easy to swap them out for better contrast/accessibility. For instance, I'm replacing the main color used in the original site design (#77a466) because it didn't pass WCAG 2.0 AA contrast standards with the white background used throughout. */
 
 /* BASE STYLES */
 body {
@@ -69,7 +70,8 @@ figure {
 
 /*The widths are in a percentage!*/
 header {
-	border-bottom: 3px solid #77a466;
+	border-bottom: 3px solid var(--main-color, darkolivegreen); 
+	/* border-bottom: 3px solid #77a466; */
 	/* text-align: center; */
 	width: 100%;
 	display: flex;
@@ -81,11 +83,13 @@ header {
 header h1 {
 	margin: 0;
 	padding: 38px 20px 20px 20px;
-	border-bottom: 3px solid #77a466;
+	border-bottom: 3px solid var(--main-color, darkolivegreen); 
+	/* border-bottom: 3px solid #77a466; */
 	/* width: 100%; */
 }
 header h1 span {
-	color: #77a466;
+	color: var(--main-color, darkolivegreen); 
+	/* color: var(--main-color, #77a466); */
 }
 
 header .logo {
@@ -110,7 +114,8 @@ header nav ul li {
 }
 header nav ul li a {
 	text-decoration: none;
-	color:#77a466;
+	color: var(--main-color, darkolivegreen);
+	/* color:#77a466; */
 }
 header nav ul li a:hover,
 header nav ul li a:focus {
@@ -137,13 +142,15 @@ header nav ul li a:focus {
 
 .main-image img {
 	width: 100%;
-	border-bottom: 3px solid #77a466;
+	border-bottom: 3px solid var(--main-color, darkolivegreen);
+	/* border-bottom: 3px solid #77a466; */
 }
 
 .main-title h2 {
 	text-align: left;
 	padding: 5px 0;
-	color: #77a466;
+	color: var(--main-color, darkolivegreen);
+	/* color: #77a466; */
 }
 .main-title p {
 	padding: 0;
@@ -164,7 +171,19 @@ header nav ul li a:focus {
 }
 .menu li {
 	padding: 10px 0;
-	color:#77a466;
+	color: var(--main-color, darkolivegreen);
+}
+.menu a {
+	text-decoration: none;
+	color: var(--main-color, darkolivegreen);
+}
+.menu a:hover,
+.menu a:focus {
+	/* color:#333; */
+	/* font-weight: 700; */
+	text-decoration: underline;
+	text-decoration-thickness: .2em;
+	text-underline-offset: 0.1em;
 }
 
 .reviews {
@@ -191,7 +210,7 @@ footer {
 footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
-	color: #77a466;
+	color: var(--main-color, darkolivegreen);
 	font-size: 0.875em;
 }
 
@@ -204,9 +223,10 @@ i {
 	font-size: 4em;
   	margin-bottom: 10px;
 	text-align: center;
-	color: #77a466;
+	color: var(--main-color, darkolivegreen);
+	/* color: #77a466; */
 }
-ul#lure.menu {
+ul.lure {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -214,21 +234,23 @@ ul#lure.menu {
 }
 li.lure-item {
 	margin: 5px;
+	list-style: none;
+	padding: 5px;
 }
-.menu a {
+.lure a {
 	text-decoration: none;
-	background-color: #eee;
-	color: #77a466;
-	border: 2px solid #77a466;
+	background-color: #FFFFFF;
+	color: var(--main-color, darkolivegreen);
+	border: 2px solid var(--main-color, darkolivegreen);
 	font-weight: 700;
 	padding: 5px 10px;
 	border-radius: 25px;
 }
-.menu a:hover,
-.menu a:focus {
+.lure a:hover,
+.lure a:focus {
 	/* color:#333; */
-	background-color: #77a466;
-	color:#eee;
+	background-color: var(--main-color, darkolivegreen);
+	color:#FFFFFF;
 }
 
 /*************** MENUS PAGE STYLES ***************/
@@ -258,7 +280,7 @@ nav.menu-nav ul li {
 }
 nav.menu-nav ul li a {
 	text-decoration: none;
-	color:#77a466;
+	color: var(--main-color, darkolivegreen);
 }
 nav.menu-nav ul li a:hover,
 nav.menu-nav ul li a:focus {
@@ -281,7 +303,7 @@ nav.menu-nav ul li a:focus {
 	text-decoration: underline;
 	text-decoration-thickness: 3px;
 	text-underline-offset: 0.5em;
-	text-decoration-color: #77a466;
+	text-decoration-color: var(--main-color, darkolivegreen);
 }
 .menu-descrip {
 	text-align: center;
@@ -315,7 +337,7 @@ nav.menu-nav ul li a:focus {
   }
 .item p {
 	width: 60%;
-	color:#77a466;
+	color: var(--main-color, darkolivegreen);
 	margin: .5em 0 1em;
 	line-height: 1.5em;
 }
@@ -339,7 +361,7 @@ nav.menu-nav ul li a:focus {
 }
 .hours p span, 
 .hours ul li span {
-	color: #77a466;
+	color: var(--main-color, darkolivegreen);
 }
 
 #map figure {
