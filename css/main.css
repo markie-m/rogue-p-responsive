@@ -404,10 +404,18 @@ nav.menu-nav ul li a:focus {
 	position: relative;
 	width: 80%;
 }
-  
+
 /* Hide the images by default */
 .mySlides {
 	display: none;
+}
+/* But show the first image by default */
+.display.mySlides {
+	display: block;
+}
+/* This ensures the caption container entirely fills the space between the .gallery.container img and the thumbnail images, getting rid of a small white space between the first 2. */
+img {
+	vertical-align: middle;
 }
   
 /* Add a pointer when hovering over the thumbnail images */
