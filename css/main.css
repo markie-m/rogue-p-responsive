@@ -602,4 +602,8 @@ img {
 		margin-left: 3%;
 	}
 	
+	/*************** desktop GALLERY PAGE STYLES ***************/
+	.gallery.container {
+		width: 75%;
+	}
 }
