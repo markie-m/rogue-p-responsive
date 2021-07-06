@@ -53,45 +53,70 @@
         </section>
         <aside class="contact-form">
             <div class="content-wrapper">
-              <div class="form-description">
-                <h3>Want to share your love for Rogue Pickings or be added to our seasonal newsletter?</h3>
-                <p>
-                    Fill out our contact form for a chance to be featured on our Reviews page.
-                </p>
-              </div>
-              <div class="form">
-                <h3>Contact us</h3>
+                <div class="form-description">
+                    <h3>Want to share your love for Rogue Pickings or be added to our seasonal newsletter?</h3>
+                    <p>Fill out our contact form for a chance to be featured on our Reviews page.</p>
+                </div>
+                <div class="form">
+                    <h3>Contact us</h3>
 
-                <div class="form-group">
-                    <div class="inputGroupContainer">
+                <!-- <div class="form-group"> -->
+                    <!-- <div class="inputGroupContainer"> -->
                         <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <span class="input-group-addon"><i class="input-icon fa fa-user"></i></span>
                             <input name="name" placeholder="John Doe" class="form-control" type="text">
                         </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="inputGroupContainer">
+                    <!-- </div> -->
+                <!-- </div> -->
+                <!-- <div class="form-group"> -->
+                    <!-- <div class="inputGroupContainer"> -->
                         <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                            <span class="input-group-addon"><i class="input-icon fa fa-envelope"></i></span>
                             <input name="email" type="email" class="form-control" placeholder="john.doe@yahoo.com">
                         </div>
-                    </div>
-                </div>
+                    <!-- </div> -->
+                <!-- </div> -->
 
                 <input type="text" name="name" placeholder="Your name" required>
                 <input type="text" name="email" placeholder="email address" required>
                 <input type="button" value="Sign me up">
 
-                <p></p>
-                <textarea name="message" placeholder="My meal at Rogue Pickings..."></textarea>
+                <h4>How much did you like your experience at Rogue Pickings?</h4>
+                <!-- <div class="form-group"> -->
+                  <!-- <div class="col-md-4 inputGroupContainer"> -->
+                  <div class="input-group">
+                  <span class="input-group-addon"><i class="input-icon fa fa-heart"></i></span>
+                   <select class="form-control" id="rate">
+                      <option value="1star">1</option>
+                      <option value="2stars">2</option>
+                      <option value="3stars">3</option>
+                      <option value="4stars">4</option>
+                      <option value="5stars">5</option>
+                    </select>
+                    </div>
+                  <!-- </div> -->
+                <!-- </div> -->
+                
+                <h4>Tell us about your meal.</h4>
+                
+                <!-- <div class="form-group"> -->
+                  <!-- <div class="col-md-4 inputGroupContainer"> -->
+                  <div class="input-group">
+                  <span class="input-group-addon"><i class="input-icon fa fa-pencil"></i></span>
+                  <textarea class="form-control" id="review" rows="3"></textarea>
+                 
+                    </div>
+                  <!-- </div> -->
+                <!-- </div> -->
+
                 <p>Should we feature your review on our Reviews page? Reviews will be attributed using first names only.</p>
                 <input type="radio" id="yes" name="reviews-permission" value="yes" >
                 <label for="yes">yes</label><br>
                 <input type="radio" id="no" name="reviews-permission" value="no">
                 <label for="no">no</label><br>
                 
-                <input type="button" value="Contact Us">
+                <button type="submit" class="btn btn-primary" onclick="alert('Thank you for your interest in Rogue Pickings. Were we an actual food truck, we would love to serve you.')">Contact Us</button>
+                <input type="button" value="Empty">
               </div>
             </div> <!-- aside content wrapper ends -->
         </aside>

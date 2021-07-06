@@ -503,17 +503,41 @@ aside.contact-form {
 	background: var(--main-color, darkolivegreen);
 	padding: 10px;
 }
+.form-description {
+	/* background-color: var(--main-color, darkolivegreen); */
+	/* background-color: rgba(78, 130, 55, .5);  */
+	background-color: rgba(255, 255, 255, .5);
+}
+.input-group {
+	background-color: rgba(255, 255, 255, .5);
+	padding: .5em;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 5px;
+}
 aside.contact-form textarea {
 	width: 200px;
 	height: 200px;
 }
-input-group-addon {
+span.input-group-addon {
 	background-color: #FFF;
+	padding: .5em;
+	width: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.fa.fa-user {
+/* .fa.fa-user, */
+/* input-group-addon i, */
+i.input-icon {
 	width: 15px;
 	height: 15px;
-	
+	font-size: 1em;
+	margin: 0;
+}
+.form-control {
+	width: 85%;
 }
 
 
