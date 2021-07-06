@@ -384,7 +384,9 @@ nav.menu-nav ul li a:focus {
 	left: 0; 
 }
 
-/*************** GALLERY PAGE STYLES ***************/
+/*************** GALLERY page STYLES ***************/
+/* Used w3Schools' Slideshow Gallery code as a base for my own gallery here. */
+
 /* Position the image container (needed to position the left and right arrows) */
 .gallery.main-title {
 	display: flex;
@@ -495,6 +497,24 @@ img {
 	opacity: 1;
 }
 
+
+/*************** CONTACT page STYLES ***************/
+aside.contact-form {
+	background: var(--main-color, darkolivegreen);
+	padding: 10px;
+}
+aside.contact-form textarea {
+	width: 200px;
+	height: 200px;
+}
+input-group-addon {
+	background-color: #FFF;
+}
+.fa.fa-user {
+	width: 15px;
+	height: 15px;
+	
+}
 
 
 /*************** RESPONSIVE STYLES & BREAKPOINTS START HERE ***************/
