@@ -539,6 +539,9 @@ i.input-icon {
 .form-control {
 	width: 85%;
 }
+textarea#review.form-control {
+	width: 100%;
+}
 
 
 /*************** RESPONSIVE STYLES & BREAKPOINTS START HERE ***************/
