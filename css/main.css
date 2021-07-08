@@ -176,12 +176,12 @@ header nav ul li a:focus {
 	padding: 10px 0;
 	color: var(--main-color, darkolivegreen);
 }
-.menu a {
+.bottom-section a {
 	text-decoration: none;
 	color: var(--main-color, darkolivegreen);
 }
-.menu a:hover,
-.menu a:focus {
+.bottom-section a:hover,
+.bottom-section a:focus {
 	/* color:#333; */
 	/* font-weight: 700; */
 	text-decoration: underline;
@@ -499,18 +499,33 @@ img {
 
 
 /*************** CONTACT page STYLES ***************/
+
+.social-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+.social-icons p {
+	margin: 0;
+}
+.social-icons i {
+	font-size: 2em;
+	padding: 0 .5em;
+}
+.social-icons i:hover,
+.social-icons i:focus {
+	color: #000000;
+}
 aside.contact-form {
 	background-color:rgb(78, 130, 55, .25);
 	/* background-color: rgba(255, 255, 255, .75); */
 	padding: 10px;
 	max-width: 600px;
-	margin-bottom: 1em;
+	margin: 1em 0;
 	border-radius: 10px;
 	-webkit-box-shadow: 2px 2px 15px 2px rgba(0,0,0,0.5); 
 	box-shadow: 2px 2px 15px 2px rgba(0,0,0,0.5);
-}
-.contact.main-title p {
-	margin: 1em 0 2em;
 }
 .form-description {
 	/* background-color: var(--main-color, darkolivegreen); */
@@ -626,6 +641,11 @@ textarea#review.form-control {
 	}
 	.map {
 		border-right: none;
+	}
+
+	/*************** tablet CONTACT PAGE STYLES ***************/
+	.social-icons i {
+		padding: 0 1em;
 	}
 }
 
