@@ -70,6 +70,16 @@ ul {
 figure {
 	margin: 0;
 }
+#copyright {
+	width: 100%;
+}
+#copyright p {
+	font-size: 0.875em;
+	margin: 0 0 1em;
+}
+#copyright a {
+	color: var(--main-color, darkolivegreen);
+}
 
 /*The widths are in a percentage!*/
 header {
@@ -497,6 +507,19 @@ img {
 	opacity: 1;
 }
 
+/*************** REVIEWS page STYLES ***************/
+.reviews.main-title {
+	width: 100%;
+}
+
+p.reviews.fontawesome-icon {
+	margin: 1.25em 0 0;
+}
+.reviews i {
+	font-size: 1em;
+	color: var(--main-color, darkolivegreen);
+	margin-bottom: 0;
+}
 
 /*************** CONTACT page STYLES ***************/
 
@@ -642,6 +665,21 @@ textarea#review.form-control {
 	.map {
 		border-right: none;
 	}
+
+	/*************** tablet REVIEWS PAGE STYLES ***************/
+	/* .reviews.main-title {
+		display: flex;
+		justify-content: flex-start;
+		width: 100%;
+	} */
+	.spotlight.reviews {
+		max-width: 700px;
+	}
+	p.spotlight.reviews {
+		font-size: 1.125em;
+		line-height: 1.5em;
+	}
+	
 
 	/*************** tablet CONTACT PAGE STYLES ***************/
 	.social-icons i {
