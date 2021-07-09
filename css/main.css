@@ -79,7 +79,15 @@ figure {
 }
 #copyright a {
 	color: var(--main-color, darkolivegreen);
+	text-decoration: none;
 }
+#copyright a:hover,
+#copyright a:focus {
+	text-decoration: underline;
+	text-decoration-thickness: .2em;
+	text-underline-offset: 0.1em;
+}
+
 
 /*The widths are in a percentage!*/
 header {
