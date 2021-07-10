@@ -236,6 +236,11 @@ footer span {
 }
 
 /*************** ABOUT PAGE STYLES ***************/
+#about-sec1,
+#about-sec2,
+#about-sec3 {
+	padding-bottom: 3%;
+}
 .fontawesome-icon {
 	display: flex;
 	justify-content: center;
@@ -247,19 +252,24 @@ i {
 	color: var(--main-color, darkolivegreen);
 	/* color: #77a466; */
 }
-ul.lure {
+.lure-buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* ul.lure {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	flex-flow: row wrap;
 	padding: 0;
 }
-li.lure-item {
+li .lure-item {
 	margin: 5px;
 	list-style: none;
 	padding: 5px;
-}
-.lure a {
+} */
+a.lure-item {
 	text-decoration: none;
 	background-color: #FFFFFF;
 	color: var(--main-color, darkolivegreen);
@@ -267,12 +277,16 @@ li.lure-item {
 	font-weight: 700;
 	padding: 5px 10px;
 	border-radius: 25px;
+	margin: 5px;
 }
 .lure a:hover,
 .lure a:focus {
 	/* color:#333; */
 	background-color: var(--main-color, darkolivegreen);
 	color:#FFFFFF;
+}
+ul.menu {
+	margin-bottom: 1em;
 }
 
 /*************** MENUS PAGE STYLES ***************/
@@ -374,6 +388,7 @@ nav.menu-nav ul li a:focus {
 	align-items: center;
 	flex-flow: row wrap;
 	padding: 0;
+	text-align: center;
 }
 .hours ul li {
 	color: #000000;
@@ -386,6 +401,9 @@ nav.menu-nav ul li a:focus {
 	color: var(--main-color, darkolivegreen);
 }
 
+#map {
+	padding-bottom: 3%;
+}
 #map figure {
 	width: 100%;
 	height: 0; 
@@ -647,6 +665,27 @@ textarea#review.form-control {
 	}
 
 	/*************** tablet ABOUT PAGE STYLES ***************/
+	.about.bottom-section {
+		justify-content: center;
+	}
+	/* #about-sec1,
+	#about-sec3 {
+		padding-bottom:
+	} */
+	#about-sec1,
+	#about-sec3 {
+		flex-basis: 32%;
+	}
+	#about-sec1 {
+		padding: 0 20px 3% 0;
+	}
+	#about-sec2 {
+		flex-basis: 35%;
+		padding: 0 20px 16%;
+	}
+	#about-sec3 {
+		padding: 0 0 3% 20px;
+	}
 	#about-sec2 h3 {
 		text-align: center;
 	}
@@ -664,14 +703,19 @@ textarea#review.form-control {
 
 	/*************** tablet LOCATIONS PAGE STYLES ***************/
 	.locations.bottom-section {
-		justify-content: space-around;
+		justify-content: center;
 	}
 	.hours, 
 	.map {
 		flex-basis: 45%;
+		/* padding: 0 20px; */
+	}
+	.hours {
+		padding: 0 20px 0 0;
 	}
 	.map {
 		border-right: none;
+		padding: 0 0 3% 20px;
 	}
 
 	/*************** tablet REVIEWS PAGE STYLES ***************/
