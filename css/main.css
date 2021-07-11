@@ -194,12 +194,12 @@ header nav ul li a:focus {
 	padding: 10px 0;
 	color: var(--main-color, darkolivegreen);
 }
-.bottom-section a {
+.main.bottom-section a {
 	text-decoration: none;
 	color: var(--main-color, darkolivegreen);
 }
-.bottom-section a:hover,
-.bottom-section a:focus {
+.main.bottom-section a:hover,
+.main.bottom-section a:focus {
 	/* color:#333; */
 	/* font-weight: 700; */
 	text-decoration: underline;
@@ -279,8 +279,8 @@ a.lure-item {
 	border-radius: 25px;
 	margin: 5px;
 }
-.lure a:hover,
-.lure a:focus {
+a.lure-item:hover,
+a.lure-item:focus {
 	/* color:#333; */
 	background-color: var(--main-color, darkolivegreen);
 	color:#FFFFFF;
