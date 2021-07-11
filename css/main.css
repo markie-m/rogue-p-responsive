@@ -434,6 +434,9 @@ nav.menu-nav ul li a:focus {
 .gallery.main-title p {
 	text-align: center;
 }
+.gallery.social-icons {
+	margin-bottom: 1em;
+}
 .gallery.bottom-section {
 	justify-content: center;
 	border-top: none;
@@ -441,6 +444,7 @@ nav.menu-nav ul li a:focus {
 .gallery.container {
 	position: relative;
 	width: 80%;
+	border-top: 3px solid var(--main-color, darkolivegreen);
 }
 
 /* Hide the images by default */
