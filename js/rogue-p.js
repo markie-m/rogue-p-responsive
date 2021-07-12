@@ -12,5 +12,4 @@ function globespin() {
 }
 globespin();
 setInterval(globespin, 3000);
-// // End of Locations page animated icon JS
-
+// End of Locations page animated icon JS

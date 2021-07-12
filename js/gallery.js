@@ -1,5 +1,5 @@
 
-// This is the code that makdes the Gallery page slideshow function
+// This is the code that makes the Gallery page slideshow function
 var slideIndex = 1;
 showSlides(slideIndex);
 
