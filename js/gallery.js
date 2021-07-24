@@ -7,6 +7,7 @@ const next = document.querySelector('.next');
 next.addEventListener('click', function() {
   plusSlides(1);
 })
+// Here we're declaring a constant named "next" and defining it as anything in the HTML document with the class name ".next". Then we're adding an event listener to that constant so when an element with the class .next is clicked, the function plusSlides(1) will run, advancing the slides by 1.
 
 const prev = document.querySelector('.prev');
 prev.addEventListener('click', function() {
