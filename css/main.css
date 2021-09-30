@@ -784,6 +784,9 @@ textarea#review.form-control {
 	}
 
 	/*************** desktop MENUS PAGE STYLES ***************/
+	main.menus {
+		max-width: 80%;
+	}
 	nav.menu-nav ul li {
 		font-size: 1.125em;
 	}
