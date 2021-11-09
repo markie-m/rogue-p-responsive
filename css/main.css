@@ -326,12 +326,21 @@ nav.menu-nav ul li a:focus {
 	text-underline-offset: 0.1em;
 }
 
-.weekly-menu .container {
-	width: 100%;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center;
+.parallax {
+	/* Set a specific height */
+	min-height: 300px; 
+	  
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallax.image-1 {
+	background-image: url("../img/salad.jpg");
+}
+.parallax.image-2 {
+	background-image: url("../img/fruit-smoothies.jpg");
 }
 .weekly-menu h2 {
 	/* font-size: 1.25em; */
@@ -343,6 +352,13 @@ nav.menu-nav ul li a:focus {
 }
 .menu-descrip {
 	text-align: center;
+}
+.weekly-menu .container {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
 }
 .item {
 	display: flex;
