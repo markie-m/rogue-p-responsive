@@ -664,6 +664,13 @@ textarea#review.form-control {
 
 /*************** RESPONSIVE STYLES & BREAKPOINTS START HERE ***************/
 
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+	.parallax {
+	  background-attachment: scroll;
+	}
+}
+
 /*************** TABLET STYLES ***************/
 @media all and (min-width:768px) {
 	
