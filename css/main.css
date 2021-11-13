@@ -366,6 +366,7 @@ nav.menu-nav ul li a:focus {
 .menu-descrip {
 	text-align: center;
 	color: #eee;
+	margin: 12px 18px 18px;
 }
 .weekly-menu .container {
 	width: 100%;
