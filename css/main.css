@@ -343,9 +343,12 @@ nav.menu-nav ul li a:focus {
 	flex-flow: row wrap;
 }
 .parallax.image-1 {
-	background-image: url("../img/salad.jpg");
+	background-image: url("../img/fruit-parfaits.jpg");
 }
 .parallax.image-2 {
+	background-image: url("../img/salad.jpg");
+}
+.parallax.image-3 {
 	background-image: url("../img/fruit-smoothies.jpg");
 }
 .menu-title {
