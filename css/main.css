@@ -363,7 +363,7 @@ nav.menu-nav ul li a:focus {
 	text-underline-offset: 0.5em;
 	/* text-decoration-color: var(--main-color, darkolivegreen); */
 	text-decoration-color: var(--secondary-color, black);
-	color: #eee;
+	color: #f8f8f8;
 	margin: 0;
 }
 .menu-descrip {
