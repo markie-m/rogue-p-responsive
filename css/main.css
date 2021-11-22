@@ -835,11 +835,15 @@ textarea#review.form-control {
 	.item {
 		justify-content: center;
 	}
+	.item h3 {
+		width: 90%;
+	}
 	.item img {
 		width: 200px; /* Set a small width */
 	}
 	.item p {
 		margin-left: 3%;
+		width: 80%;
 	}
 	
 	/*************** desktop GALLERY PAGE STYLES ***************/
