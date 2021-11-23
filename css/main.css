@@ -382,7 +382,7 @@ nav.menu-nav ul li a:focus {
 }
 .item {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
 }
@@ -405,7 +405,7 @@ nav.menu-nav ul li a:focus {
 	width: 100px; /* Set a small width */
   }
 .item p {
-	width: 60%;
+	width: 90%;
 	color: var(--main-color, darkolivegreen);
 	margin: .5em 0 1em;
 	line-height: 1.5em;
