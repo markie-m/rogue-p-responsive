@@ -378,15 +378,13 @@ nav.menu-nav ul li a:focus {
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
+	margin: 0 0 12px;
 }
 .item {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-flow: row wrap;
-}
-.item:last-child {
-	margin: 0 0 12px;
 }
 .item figure {
 	/* width: 20%; */
